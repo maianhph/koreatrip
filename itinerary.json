@@ -1,0 +1,659 @@
+[
+ {
+  "t": "Day 1 · Busan – Seoul",
+  "d": "T5 · 5/11",
+  "it": [
+   {
+    "id": "oamyc02",
+    "tm": "22h 4/11",
+    "ti": "Di chuyển đến sân bay",
+    "de": "Nhà ga T2 Sân bay Nội Bài",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "h8onjca",
+    "tm": "00h 5/11",
+    "ti": "Xuất cảnh",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "gzr10tl",
+    "tm": "01:45–07:55",
+    "ti": "Hà Nội → Incheon",
+    "de": "Incheon International Airport Terminal 1/2",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "lss2s2z",
+    "tm": "07:55–09:15",
+    "ti": "Nhập cảnh",
+    "de": "Nhập cảnh, lấy hành lý, mua T-money/SIM/eSIM, ăn nhẹ.",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "1zz4fp7",
+    "tm": "09:15–10:25",
+    "ti": "ICN → Seoul Station",
+    "de": "Đi AREX về Seoul Station để nối KTX.",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "m1u2t1a",
+    "tm": "10:25–11:00",
+    "ti": "Di chuyển / ăn nhẹ tại Seoul Station",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "odeedyt",
+    "tm": "12:00–15h",
+    "ti": "🚄 KTX Seoul Station → Busan Station",
+    "de": "Đi KTX đến Busan.",
+    "fd": "Ăn trưa nhẹ trên tàu",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "qiyiai0",
+    "tm": "15h–16h",
+    "ti": "Check in khách sạn",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Ga Busan → Line 1 đến Seomyeon → Line 2 đến Haeundae (~55–65p). Có vali nên taxi ~40p sẽ tiện hơn.",
+    "nq": "해운대해변로298번길 29"
+   },
+   {
+    "id": "q918iyz",
+    "tm": "16h- 16h30",
+    "ti": "Đi taxi sang ga Mipo chụp ảnh check in",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": "블루라인파크 미포정거장"
+   },
+   {
+    "id": "lg8k35i",
+    "tm": "16h30-17h",
+    "ti": "Đi Beachtrain sang Cheongsapo ",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": ""
+   },
+   {
+    "id": "yv14lij",
+    "tm": "17h–18h",
+    "ti": "Xuống tàu, tham quan Cheongsapo",
+    "de": "Chơi, ăn vặt & chụp ảnh ở Cheongsapo.",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Sky Capsule kết thúc ngay tại Cheongsapo (청사포 정거장).",
+    "nq": "청사포 정거장"
+   },
+   {
+    "id": "gji87ah",
+    "tm": "19h",
+    "ti": "🚃 Đi taxi về Haeundae",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "12cko8o",
+    "tm": "20h",
+    "ti": "Ăn tối quanh Haeundae",
+    "de": "Haeundae Beach + ngắm biển lúc chiều tối. Mua gà ăn ở bãi biển hoặc tuỳ hứng.",
+    "fd": "Op 1: Gukbap (canh thịt lợn/bò) – Eomyongbaek Pork and Rice Soup 엄용백돼지국밥 해운대점 (~13.000 won/ng, phải xếp hàng; 부산 광안해변로370번길 9-32) hoặc Haeundae Wonjo Halmae Gukbap 해운대원조할매국밥 (40 Jungdong 1-ro, quán lâu đời nhất, ~8.500 won/ng)\nOp 2: Ăn trong chợ truyền thống Haeundae 해운대 전통시장",
+    "nt": "",
+    "ok": 0,
+    "mv": "Đi bộ ~10–15p từ khách sạn.",
+    "nq": "해운대시장"
+   },
+   {
+    "id": "phibmj5",
+    "tm": "21h",
+    "ti": "Đi loanh quanh (OliveYoung, chợ đêm,...)",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "pb7ompt",
+    "tm": "22h30–23h30",
+    "ti": "Nghỉ ngơi",
+    "de": "Tẩy trang, đi ngủ",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   }
+  ]
+ },
+ {
+  "t": "Day 2 · Busan",
+  "d": "T6 · 6/11",
+  "it": [
+   {
+    "id": "fjt76ht",
+    "tm": "6h30–7h30",
+    "ti": "Ăn sáng",
+    "de": "- Dậy, ăn sáng, makeup\n- Mua nước mang theo vì trời có thể nắng\n- Check-out khách sạn",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "5fme6u9",
+    "tm": "8h–10h",
+    "ti": "Tham quan Huinnyeoul",
+    "de": "- Check-in, đi dạo, chụp ảnh, mua nước/bánh takeaway\n- Đi bộ đến Jeoryeong Coastal Walk\n- Nhiều cafe 10h mới mở cửa; 10h ngồi cafe nghỉ đến 11h rồi về",
+    "fd": "",
+    "nt": "Hidden spot: 도돌이계단 · Cafe: CHƯA CÓ, TÌM ĐI",
+    "ok": 0,
+    "mv": "Xa nhất trong ngày: taxi ~40–50p (~30.000–35.000 won), hoặc Line 2 → Line 1 xuống Nampo/Jungang rồi bus sang Yeongdo (~1h15).",
+    "nq": "흰여울문화마을"
+   },
+   {
+    "id": "abk22gn",
+    "tm": "11h–12h",
+    "ti": "Gamcheon Culture Village",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Từ Huinnyeoul taxi ~20–25p, hoặc bus theo Naver.",
+    "nq": "감천문화마을"
+   },
+   {
+    "id": "h8pn4go",
+    "tm": "12h30",
+    "ti": "Ăn trưa",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "yucdj0f",
+    "tm": "14h",
+    "ti": "Di chuyển đi biển Gwangali",
+    "de": "Từ Haeundae Beach đi bộ, bắt bus 38 đến Gwangali (~25p) theo map",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Bus 38 từ Haeundae (~25p) như trong lịch trình.",
+    "nq": "광안리해수욕장"
+   },
+   {
+    "id": "k0kxl7x",
+    "tm": "14h–17h",
+    "ti": "Tham quan Gwangali Beach",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "ho646jv",
+    "tm": "",
+    "ti": "Cafe",
+    "de": "Ngồi cafe, chụp ảnh",
+    "fd": "Cup & Cup 컵앤컵커피",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "h151o5n",
+    "tm": "Tối",
+    "ti": "Đi ăn",
+    "de": "",
+    "fd": "Haeundae Traditional Market 해운대 전통시장",
+    "nt": "",
+    "ok": 0,
+    "mv": "Đi bộ ~10–15p từ khách sạn.",
+    "nq": "해운대시장"
+   }
+  ]
+ },
+ {
+  "t": "Day 3 · Busan – Seoul",
+  "d": "T7 · 7/11",
+  "it": [
+   {
+    "id": "lr67ka8",
+    "tm": "7h",
+    "ti": "Dậy, ăn sáng, makeup",
+    "de": "- Mua nước mang theo vì trời có thể nắng\n- Check-out khách sạn",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "a27l22j",
+    "tm": "8h",
+    "ti": "Di chuyển đi Busan Station",
+    "de": "- Mua đồ ăn sáng ở cửa hàng tiện lợi\n- Có mặt ở ga trước 15p để tìm đúng line tàu & xuất vé",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 2 Haeundae → Seomyeon → Line 1 Busan (~55–60p), hoặc taxi ~40p có vali.",
+    "nq": "부산역"
+   },
+   {
+    "id": "codnhnf",
+    "tm": "9h26–11h53",
+    "ti": "KTX → Seoul Station (~2 tiếng)",
+    "de": "- Đặt vé trước tại website\n- Lên tàu tìm chỗ để vali ở đầu toa\n- Makeup luôn trên tàu",
+    "fd": "Có thể ăn trên tàu",
+    "nt": "Tàu chạy đúng giờ",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "47fup7i",
+    "tm": "12h–13h",
+    "ti": "Về khách sạn và check in",
+    "de": "Ra cửa hàng tiện lợi tìm gì ăn rồi đi chơi luôn",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Seoul Station → khách sạn: tàu điện ~35–45p (1 lần đổi), hoặc taxi ~25–30p. Chọn tuyến “ít đổi nhất” trên Naver.",
+    "nq": "서울 영등포구 양평로 102-2"
+   },
+   {
+    "id": "yc4pawh",
+    "tm": "14h–15h",
+    "ti": "Yongsan Park",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 5 → Gongdeok → Line 6 đến Samgakji / Noksapyeong (~45p).",
+    "nq": "용산공원"
+   },
+   {
+    "id": "j985o12",
+    "tm": "15h–16h",
+    "ti": "Itaewon",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 5 → Gongdeok → Line 6 đến Itaewon (~45p).",
+    "nq": "이태원역"
+   },
+   {
+    "id": "ov3a1za",
+    "tm": "17h–20h",
+    "ti": "Sông Hàn",
+    "de": "- Ngắm hoàng hôn\n- Ngắm cầu phun nước ở Banpo Hangang Park",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 9 đến Express Bus Terminal rồi đi bộ/bus tới Banpo Hangang Park; hoặc taxi ~25p.",
+    "nq": "반포한강공원"
+   },
+   {
+    "id": "v2uxs1f",
+    "tm": "20h",
+    "ti": "Hongdae – dinner",
+    "de": "",
+    "fd": "Ăn lươn nướng quán 弘揚燒鰻魚, ~1 triệu/người",
+    "nt": "Thịt nướng thường phải gọi mỗi người 1 phần",
+    "ok": 0,
+    "mv": "Line 2 Dangsan → Hongik Univ. (~3 ga, ~8p).",
+    "nq": "홍대입구역"
+   }
+  ]
+ },
+ {
+  "t": "Day 4 · Seoul",
+  "d": "CN · 8/11",
+  "it": [
+   {
+    "id": "jq0w8eh",
+    "tm": "8h–11h",
+    "ti": "Yonsei – Ewha University",
+    "de": "",
+    "fd": "",
+    "nt": "2 trường gần nhau, trường rộng, đi hơi mỏi chân, chủ yếu chụp ảnh",
+    "ok": 0,
+    "mv": "Line 2 Dangsan → ga Sinchon (Yonsei) rồi tiếp 1 ga tới Ewha Womans Univ. (~15p).",
+    "nq": "연세대학교"
+   },
+   {
+    "id": "8iflsd6",
+    "tm": "11h–14h",
+    "ti": "Seongsu",
+    "de": "",
+    "fd": "Lunch + shopping",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 2 Dangsan → Seongsu, đi thẳng ~35–40p.",
+    "nq": "성수역"
+   },
+   {
+    "id": "bibist7",
+    "tm": "14h–16h",
+    "ti": "Haebangchon",
+    "de": "Di chuyển sang Haebangchon, đi dạo các con dốc, ngắm cảnh và nghỉ cafe.",
+    "fd": "Cafe / ăn nhẹ tại Haebangchon",
+    "nt": "Lịch khá sát nếu muốn đến Namsan lúc 16h; có thể rút ngắn điểm này",
+    "ok": 0,
+    "mv": "Line 5 → Gongdeok → Line 6 đến Noksapyeong, đi bộ lên Haebangchon.",
+    "nq": "해방촌"
+   },
+   {
+    "id": "a9uvd0n",
+    "tm": "16h–19h30",
+    "ti": "Namsan Tower",
+    "de": "Ngắm hoàng hôn, lên tháp vào buổi tối; book vé lên trên ngắm thành phố qua kính viễn vọng, xem phòng ánh sáng, thử trải nghiệm WC ở đây nhé 😂",
+    "fd": "Chiều đi cafe quán COMFORT, ngắm hoàng hôn xong thì lên tháp",
+    "nt": "Nên đi từ chiều đến tối (~4h). Khách sạn khu Hongdae gần Namsan nên đi Namsan trước; khu khác thì Myeongdong, Hongdae buổi tối đều ok",
+    "ok": 0,
+    "mv": "Cáp treo Namsan: từ ga Myeongdong (Line 4) exit 3 đi bộ; hoặc bus 02 lên tháp.",
+    "nq": "N서울타워"
+   },
+   {
+    "id": "tx2j9xz",
+    "tm": "20h",
+    "ti": "Myeongdong",
+    "de": "Chủ yếu shopping và ngắm người",
+    "fd": "Highly rcm: thịt nướng trên phố (có đôi vợ chồng biểu diễn thịt nướng múa lửa); ăn tối mì tương đen quán Hong Kong Banjeom 0410 ngay trong khu Myeongdong",
+    "nt": "",
+    "ok": 0,
+    "mv": "Từ Namsan đi bộ xuống; về khách sạn Line 4 → đổi Line 2/5 tuỳ chỉ dẫn Naver.",
+    "nq": "명동"
+   }
+  ]
+ },
+ {
+  "t": "Day 5 · Seoul",
+  "d": "T2 · 9/11",
+  "it": [
+   {
+    "id": "4bz1jqz",
+    "tm": "6h30–8h",
+    "ti": "Khách sạn",
+    "de": "Dậy, makeup, ăn sáng. Nhớ mang theo nước",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "3gacpip",
+    "tm": "8h–10h30",
+    "ti": "Bukchon Hanok Village 북촌 한옥마을",
+    "de": "",
+    "fd": "",
+    "nt": "Đến trước 10h vì sau 10h sẽ siêu đông",
+    "ok": 0,
+    "mv": "Line 5 tới Jongno 3-ga → đổi Line 3 xuống Anguk exit 2 (~40p).",
+    "nq": "북촌한옥마을"
+   },
+   {
+    "id": "8z3zjys",
+    "tm": "10h30–12h",
+    "ti": "Seochon",
+    "de": "Dạo ngõ nhỏ, chụp ảnh và ghé cafe nhẹ. Sau đó di chuyển đến Gyeongbokgung.",
+    "fd": "Cafe / ăn trưa tại Seochon",
+    "nt": "",
+    "ok": 0,
+    "mv": "Từ Bukchon đi bộ ~15–20p.",
+    "nq": "서촌"
+   },
+   {
+    "id": "havhyin",
+    "tm": "12h–15h",
+    "ti": "Gyeongbokgung Palace",
+    "de": "- Mời các trung điện tiến cung\n- Chụp ảnh 7749 kiểu với hanbok & mua đồ lưu niệm\n- Trả hanbok, thay quần áo, đi ăn trưa",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 5 Gwanghwamun hoặc Line 3 Gyeongbokgung exit 5.",
+    "nq": "경복궁"
+   },
+   {
+    "id": "yjkukpl",
+    "tm": "15h–17h",
+    "ti": "Di chuyển về Ikseon-dong",
+    "de": "Đi bus 709, sau đó chuyển sang bus 7025 theo map",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Theo lịch trình: bus 709 → 7025. Hoặc Line 3 Gyeongbokgung → Anguk/Jongno 3-ga, đi bộ.",
+    "nq": "익선동 한옥마을"
+   },
+   {
+    "id": "0v6ljev",
+    "tm": "18h–20h",
+    "ti": "Ăn tối ở Ikseon-dong",
+    "de": "",
+    "fd": "CHƯA CÓ QUÁN – cần gợi ý",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "23m8crd",
+    "tm": "20h–21h15",
+    "ti": "Ikseon-dong Hanok Village 익선동 한옥마을",
+    "de": "- Đi dạo, mua đồ lưu niệm\n- Di chuyển đi Myeongdong street",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 5 từ khách sạn đi thẳng tới Jongno 3-ga exit 4/6 (~30p).",
+    "nq": "익선동 한옥마을"
+   },
+   {
+    "id": "8tk8kxs",
+    "tm": "22h–23h",
+    "ti": "Gwanghwamun Square 광화문광장 / Cheonggyecheon 청계천",
+    "de": "Check-in, đi dạo đêm ở quảng trường Gwanghwamun & suối Cheonggyecheon",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 5 từ khách sạn tới Gwanghwamun, ~30–35p, đi thẳng không đổi.",
+    "nq": "광화문광장"
+   },
+   {
+    "id": "ktypp71",
+    "tm": "23h–0h",
+    "ti": "Về khách sạn",
+    "de": "Nghỉ ngơi",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   }
+  ]
+ },
+ {
+  "t": "Day 6 · Seoul",
+  "d": "T3 · 10/11",
+  "it": [
+   {
+    "id": "en8dikw",
+    "tm": "8h–11h",
+    "ti": "Seoul Grand Park Sky Lift",
+    "de": "Di chuyển đến Gwacheon; trải nghiệm Sky Lift và đi dạo quanh công viên.",
+    "fd": "Ăn trưa quanh Seoul Grand Park / đồ ăn nhẹ",
+    "nt": "Kiểm tra lịch vận hành theo thời tiết trước ngày đi",
+    "ok": 0,
+    "mv": "Line 2 Dangsan → Sadang → Line 4 xuống Seoul Grand Park (~60–70p).",
+    "nq": "서울대공원 스카이리프트"
+   },
+   {
+    "id": "43wjg8x",
+    "tm": "11h–12h",
+    "ti": "Di chuyển về Gangnam ăn trưa",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 4 → Sadang → Line 2 tới Gangnam (~35–40p).",
+    "nq": "강남역"
+   },
+   {
+    "id": "fp923qw",
+    "tm": "13h–14h",
+    "ti": "Starfield / Coex Mall (Gangnam)",
+    "de": "Có cái thư viện hot TikTok",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Line 2 Samseong exit 5/6, hoặc Line 9 Bongeunsa exit 7.",
+    "nq": "스타필드 코엑스몰"
+   },
+   {
+    "id": "1f7dw08",
+    "tm": "14h–16h",
+    "ti": "Apgujeong",
+    "de": "Khu vui chơi giải trí",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Từ Coex taxi ~10–15p, hoặc Line 9 → Sinsa → Line 3 tới Apgujeong.",
+    "nq": "압구정로데오"
+   },
+   {
+    "id": "u38zxe7",
+    "tm": "16h–18h",
+    "ti": "Seoul Forest",
+    "de": "Công viên, ngắm hoa anh đào / lá vàng chill chill",
+    "fd": "Mua đồ picnic, ăn brunch",
+    "nt": "Buổi trưa đông dân văn phòng, nên trưa nhấc mông sang Seongsu",
+    "ok": 0,
+    "mv": "Từ Apgujeong Rodeo đi tuyến Suin-Bundang thẳng tới Seoul Forest (~15p).",
+    "nq": "서울숲"
+   },
+   {
+    "id": "caaxmw7",
+    "tm": "20h",
+    "ti": "Về gần nhà",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Seoul Forest → Line 2 Ttukseom → Dangsan, hoặc theo Naver.",
+    "nq": "서울 영등포구 양평로 102-2"
+   }
+  ]
+ },
+ {
+  "t": "Day 7 · Seoul – Hà Nội",
+  "d": "T4 · 11/11",
+  "it": [
+   {
+    "id": "vw0xolv",
+    "tm": "6h–7h",
+    "ti": "Khách sạn",
+    "de": "Dậy, check-out",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "38b64t6",
+    "tm": "7h–8h30",
+    "ti": "Di chuyển ra sân bay Incheon",
+    "de": "Đi bus 6001 theo map (1h20p) – 인천국제공항 제1여객터미널 (Terminal 1)",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "Bus 6001 như lịch trình (~1h20p). Phương án khác: Line 2 Dangsan → Hongik Univ. rồi AREX tới Incheon T1 (~50p).",
+    "nq": "인천국제공항 제1여객터미널"
+   },
+   {
+    "id": "zflc1vw",
+    "tm": "8h30–10h",
+    "ti": "Check-in",
+    "de": "Làm thủ tục, check-in, ăn sáng",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "8fe2xhh",
+    "tm": "11h05–14h10",
+    "ti": "Incheon → Hà Nội",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   },
+   {
+    "id": "t165lod",
+    "tm": "14h10–15h",
+    "ti": "Về nhà",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
+   }
+  ]
+ }
+]
