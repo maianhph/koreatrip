@@ -32,6 +32,7 @@ input[type=text],textarea{width:100%;font:inherit;color:var(--tx);background:var
 textarea{min-height:58px;resize:vertical}label{font-size:12px;color:var(--mu)}
 .pr{background:var(--ac);color:#fff;border-color:var(--ac)}
 .mv{background:var(--ac2);color:var(--tx)}.hot{background:var(--card);border:1px solid var(--br);border-left:4px solid var(--ac);border-radius:12px;padding:9px 12px;margin:10px 0;font-size:13px}.hot b{display:block}.hot a,.nv{color:var(--ac);font-weight:600;text-decoration:none}.nv{display:inline-block;margin-top:6px;font-size:13px}
+.ro .ac,.ro .add,.ro #de,.ro #rs,.ro #im{display:none}.ro .ck{pointer-events:none}
 .add{width:100%;border-style:dashed;padding:10px;color:var(--ac)}
 .hint{color:var(--mu);font-size:12px;margin-top:16px;text-align:center}
 </style>
@@ -41,9 +42,10 @@ textarea{min-height:58px;resize:vertical}label{font-size:12px;color:var(--mu)}
 <h1>🇰🇷 Hàn Quốc 7N6D · 5–11/11/2026</h1>
 <div class="sub">Bấm ✎ để sửa, ＋ để thêm hoạt động, ✓ để đánh dấu đã xong. Dữ liệu tự lưu trên trình duyệt này.</div>
 <div class="bar">
-<button id="ex">⬇ Xuất JSON</button><button id="im">⬆ Nhập JSON</button><button id="pt">🖨 In</button><button id="rs">↺ Khôi phục gốc</button>
+<button id="ex">⬇ Xuất JSON</button><button id="im">⬆ Nhập JSON</button><button id="pt">🖨 In</button><button id="lg">🔑 Đăng nhập admin</button><button id="rs">↺ Khôi phục gốc</button>
 <input type="file" id="fi" accept=".json" hidden>
 </div>
+<div class="sub" id="stt"></div>
 <div class="tabs" id="tabs"></div>
 <div id="ht"></div>
 <div class="prog"><i id="pg"></i></div><div class="sub" id="pgt"></div>
@@ -52,7 +54,7 @@ textarea{min-height:58px;resize:vertical}label{font-size:12px;color:var(--mu)}
 <div id="list"></div>
 <button class="add" id="add">＋ Thêm hoạt động</button>
 <div class="bar"><button id="pv">← Ngày trước</button><button id="nx" style="margin-left:auto">Ngày sau →</button></div>
-<div class="hint">Lưu ý: dữ liệu chỉ nằm trên trình duyệt/thiết bị này. Dùng “Xuất JSON” để sao lưu hoặc chuyển sang máy khác.</div>
+<div class="hint">Chỉ admin (đăng nhập bằng token GitHub) mới sửa được; thay đổi tự lưu vào repo và mọi thiết bị đều thấy. Dùng “Xuất JSON” để sao lưu hoặc chuyển sang máy khác.</div>
 </div>
 <script>
 const KEY='korea-trip-v1';
@@ -166,7 +168,26 @@ try{D=JSON.parse(localStorage.getItem(KEY))}catch(e){D=null}
 if(!Array.isArray(D)||!D.length)D=fresh();
 D.forEach(d=>d.it.forEach(i=>{if(i.mv===undefined){const m=MV[i.ti]||['',''];i.mv=m[0];i.nq=m[1]}}));
 {const n=new Date();if(n.getFullYear()==2026&&n.getMonth()==10&&n.getDate()>=5&&n.getDate()<=11)cur=n.getDate()-5}
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}};
+const GH={o:location.hostname.endsWith('.github.io')?location.hostname.split('.')[0]:'maianhph',r:location.hostname.endsWith('.github.io')?(location.pathname.split('/')[1]||'koreatrip'):'koreatrip',f:'itinerary.json'};
+let CAN=false,busy=false,dirty=false,st;
+const b64e=x=>btoa(unescape(encodeURIComponent(x))),b64d=x=>decodeURIComponent(escape(atob(x.replace(/\n/g,''))));
+const tk=()=>{try{return localStorage.getItem('gh-token')||''}catch(e){return ''}};
+const api=(m,body)=>fetch('https://api.github.com/repos/'+GH.o+'/'+GH.r+'/contents/'+GH.f,{method:m,headers:{Authorization:'Bearer '+tk(),Accept:'application/vnd.github+json'},body:body&&JSON.stringify(body)});
+const stt=t=>{const e=document.getElementById('stt');if(e)e.textContent=t};
+async function ghSave(){
+ if(busy){dirty=true;return}
+ busy=true;stt('Đang lưu lên GitHub…');
+ try{
+  let sha;const g=await api('GET');
+  if(g.ok)sha=(await g.json()).sha;else if(g.status!=404)throw new Error(g.status);
+  const p=await api('PUT',{message:'Cập nhật lịch trình',content:b64e(JSON.stringify(D,null,1)),sha});
+  if(!p.ok)throw new Error(p.status);
+  stt('✓ Đã lưu lên GitHub. Máy khác thấy bản mới sau vài phút.');
+ }catch(e){stt('⚠ Lưu lỗi ('+e.message+'). Kiểm tra token và kết nối mạng.')}
+ busy=false;if(dirty){dirty=false;ghSave()}
+}
+const push=()=>{if(CAN&&tk()){clearTimeout(st);st=setTimeout(ghSave,800)}};
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}push()};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function render(){
@@ -220,6 +241,27 @@ $('nx').onclick=()=>{cur=Math.min(D.length-1,cur+1);ed=null;MO=null;render();scr
 $('ex').onclick=()=>{const t=JSON.stringify(D,null,1);const el=document.createElement('textarea');el.value=t;document.body.appendChild(el);el.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}el.remove();alert(ok?'Đã sao chép JSON vào clipboard. Dán vào file .json để sao lưu.':'Không sao chép được tự động.')};
 $('im').onclick=()=>{const t=prompt('Dán nội dung JSON đã xuất:');if(!t)return;try{const x=JSON.parse(t);if(!Array.isArray(x)||!x.length)throw 0;D=x;cur=0;ed=null;save();render()}catch(e){alert('JSON không hợp lệ.')}};
 render();
+async function load(){
+ let ok=false;
+ if(tk()){
+  try{const g=await api('GET');
+   if(g.ok){D=JSON.parse(b64d((await g.json()).content));ok=true}
+   else if(g.status==404){push()}
+   else if(g.status==401)stt('⚠ Token không hợp lệ hoặc đã hết hạn.');
+  }catch(e){}
+ }else{
+  try{const r=await fetch(GH.f+'?t='+Date.now());if(r.ok){const x=await r.json();if(Array.isArray(x)&&x.length){D=x;ok=true}}}catch(e){}
+ }
+ if(ok){if(cur>=D.length)cur=0;try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}}
+}
+const mode=()=>{CAN=!!tk();document.body.classList.toggle('ro',!CAN);$('lg').textContent=CAN?'🔓 Đăng xuất admin':'🔑 Đăng nhập admin'};
+$('lg').onclick=async()=>{
+ if(tk()){if(confirm('Đăng xuất admin trên thiết bị này?')){try{localStorage.removeItem('gh-token')}catch(e){}mode();stt('');render()}return}
+ const t=prompt('Dán GitHub token (chỉ lưu trên thiết bị này):');if(!t)return;
+ try{localStorage.setItem('gh-token',t.trim())}catch(e){}
+ mode();await load();ed=null;render();if(CAN&&!$('stt').textContent)stt('Đã đăng nhập admin.');
+};
+(async()=>{mode();await load();ed=null;render()})();
 </script>
 </body>
 </html>
