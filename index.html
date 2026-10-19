@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lịch trình Hàn Quốc 7N6D</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--tx:#1d2330;--mu:#6b7280;--br:#e4e0d6;--ac:#d6336c;--ac2:#fde8ef;--fd:#e8f5ec;--fdt:#1f6b3a;--nt:#fff4dc;--ntt:#8a5a00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161b;--card:#1e2128;--tx:#eceef2;--mu:#9aa1ad;--br:#2e323b;--ac:#ff6b9a;--ac2:#3a2230;--fd:#1d3326;--fdt:#7fd8a0;--nt:#3a301a;--ntt:#f0c866}}
+:root[data-theme="dark"]{--bg:#14161b;--card:#1e2128;--tx:#eceef2;--mu:#9aa1ad;--br:#2e323b;--ac:#ff6b9a;--ac2:#3a2230;--fd:#1d3326;--fdt:#7fd8a0;--nt:#3a301a;--ntt:#f0c866}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:760px;margin:0 auto;padding:16px 14px 60px}
+h1{font-size:22px;margin:4px 0 2px}.sub{color:var(--mu);font-size:13px}
+.bar{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+button{font:inherit;cursor:pointer;border:1px solid var(--br);background:var(--card);color:var(--tx);border-radius:8px;padding:6px 10px}
+button:hover{border-color:var(--ac)}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:8px 14px;position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);margin:0 -14px;border-bottom:1px solid var(--br)}body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}.xp{display:none;margin-top:4px}.it.op .xp{display:block}.hd{cursor:pointer}.chev{color:var(--mu);font-size:11px;margin-right:5px}.ac{align-items:stretch}.ac button{min-width:34px;min-height:30px}
+.tab{white-space:nowrap;text-align:left;line-height:1.25;padding:7px 11px}.tab small{display:block;color:var(--mu);font-size:11px}
+.tab.on{background:var(--ac);border-color:var(--ac);color:#fff}.tab.on small{color:#ffe3ec}
+.prog{height:6px;background:var(--br);border-radius:9px;overflow:hidden;margin:10px 0 4px}.prog i{display:block;height:100%;background:var(--ac);width:0}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:14px 0 8px}.dh h2{font-size:18px;margin:0}
+.it{display:flex;gap:10px;background:var(--card);border:1px solid var(--br);border-radius:12px;padding:11px 12px;margin-bottom:8px}
+.it.done{opacity:.55}.it.done .ti{text-decoration:line-through}
+.ck{width:24px;height:24px;margin-top:2px;accent-color:var(--ac);flex:none}
+.bd{flex:1;min-width:0}.tm{color:var(--ac);font-weight:600;font-size:13px}.ti{font-weight:600}
+.de{color:var(--mu);font-size:14px;white-space:pre-line;margin-top:2px}
+.tag{display:block;border-radius:8px;padding:5px 9px;margin-top:6px;font-size:13px;white-space:pre-line}
+.fd{background:var(--fd);color:var(--fdt)}.nt{background:var(--nt);color:var(--ntt)}
+.ac{display:flex;flex-direction:column;gap:3px}.ac button{padding:1px 7px;font-size:13px}
+input[type=text],textarea{width:100%;font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--br);border-radius:8px;padding:6px 8px;margin-bottom:6px}
+textarea{min-height:58px;resize:vertical}label{font-size:12px;color:var(--mu)}
+.pr{background:var(--ac);color:#fff;border-color:var(--ac)}
+.mv{background:var(--ac2);color:var(--tx)}.hot{background:var(--card);border:1px solid var(--br);border-left:4px solid var(--ac);border-radius:12px;padding:9px 12px;margin:10px 0;font-size:13px}.hot b{display:block}.hot a,.nv{color:var(--ac);font-weight:600;text-decoration:none}.nv{display:inline-block;margin-top:6px;font-size:13px}
+.add{width:100%;border-style:dashed;padding:10px;color:var(--ac)}
+.hint{color:var(--mu);font-size:12px;margin-top:16px;text-align:center}
+</style>
+</head>
+<body>
+<div class="w">
+<h1>🇰🇷 Hàn Quốc 7N6D · 5–11/11/2026</h1>
+<div class="sub">Bấm ✎ để sửa, ＋ để thêm hoạt động, ✓ để đánh dấu đã xong. Dữ liệu tự lưu trên trình duyệt này.</div>
+<div class="bar">
+<button id="ex">⬇ Xuất JSON</button><button id="im">⬆ Nhập JSON</button><button id="pt">🖨 In</button><button id="rs">↺ Khôi phục gốc</button>
+<input type="file" id="fi" accept=".json" hidden>
+</div>
+<div class="tabs" id="tabs"></div>
+<div id="ht"></div>
+<div class="prog"><i id="pg"></i></div><div class="sub" id="pgt"></div>
+<div class="dh"><h2 id="dt"></h2><button id="de">✎ Đổi tên ngày</button></div>
+<div class="bar"><button id="ea">▼ Mở hết chi tiết</button><button id="ca">▲ Thu gọn</button></div>
+<div id="list"></div>
+<button class="add" id="add">＋ Thêm hoạt động</button>
+<div class="bar"><button id="pv">← Ngày trước</button><button id="nx" style="margin-left:auto">Ngày sau →</button></div>
+<div class="hint">Lưu ý: dữ liệu chỉ nằm trên trình duyệt/thiết bị này. Dùng “Xuất JSON” để sao lưu hoặc chuyển sang máy khác.</div>
+</div>
+<script>
+const KEY='korea-trip-v1';
+// [giờ, nội dung, chi tiết, ăn uống, note]
+const DEF=[
+{t:'Day 1 · Busan – Seoul',d:'T5 · 5/11',it:[
+['22h 4/11','Di chuyển đến sân bay','Nhà ga T2 Sân bay Nội Bài','',''],
+['00h 5/11','Xuất cảnh','','',''],
+['01:45–07:55','Hà Nội → Incheon','Incheon International Airport Terminal 1/2','',''],
+['07:55–09:15','Nhập cảnh','Nhập cảnh, lấy hành lý, mua T-money/SIM/eSIM, ăn nhẹ.','',''],
+['09:15–10:25','ICN → Seoul Station','Đi AREX về Seoul Station để nối KTX.','',''],
+['10:25–11:00','Di chuyển / ăn nhẹ tại Seoul Station','','',''],
+['12:00–15h','🚄 KTX Seoul Station → Busan Station','Đi KTX đến Busan.','Ăn trưa nhẹ trên tàu',''],
+['15h–15h30','Check in khách sạn','','',''],
+['~16h','Đi tàu Sky Capsule','- Xếp hàng đi Sky Capsule đến ga Mipo (đến trước 30p)\n- Tàu cabin 3 người, đi chậm 5km/h, khoảng 30p đến Cheongsapo\n- Chụp ảnh check-in trên tàu','','Nếu không mua được vé, cân nhắc: đi Beach Train hoặc Bus tới Cheongsapo chụp ảnh'],
+['17h–18h','Xuống tàu, tham quan Cheongsapo','Chơi, ăn vặt & chụp ảnh ở Cheongsapo.','',''],
+['19h','🚃 Đi taxi về Haeundae','','',''],
+['20h','Ăn tối quanh Haeundae','Haeundae Beach + ngắm biển lúc chiều tối. Mua gà ăn ở bãi biển hoặc tuỳ hứng.','Op 1: Gukbap (canh thịt lợn/bò) – Eomyongbaek Pork and Rice Soup 엄용백돼지국밥 해운대점 (~13.000 won/ng, phải xếp hàng; 부산 광안해변로370번길 9-32) hoặc Haeundae Wonjo Halmae Gukbap 해운대원조할매국밥 (40 Jungdong 1-ro, quán lâu đời nhất, ~8.500 won/ng)\nOp 2: Ăn trong chợ truyền thống Haeundae 해운대 전통시장',''],
+['21h','Đi loanh quanh','','',''],
+['22h','Đi Olive Young,…','','',''],
+['22h30–23h30','Nghỉ ngơi','Tẩy trang, đi ngủ','','']]},
+{t:'Day 2 · Busan',d:'T6 · 6/11',it:[
+['6h30–7h30','Ăn sáng','- Dậy, ăn sáng, makeup\n- Mua nước mang theo vì trời có thể nắng\n- Check-out khách sạn','',''],
+['8h–10h','Tham quan Huinnyeoul','- Check-in, đi dạo, chụp ảnh, mua nước/bánh takeaway\n- Đi bộ đến Jeoryeong Coastal Walk\n- Nhiều cafe 10h mới mở cửa; 10h ngồi cafe nghỉ đến 11h rồi về','','Hidden spot: 도돌이계단 · Cafe: CHƯA CÓ, TÌM ĐI'],
+['11h–12h','Gamcheon Culture Village','','',''],
+['12h30','Ăn trưa','','',''],
+['14h','Di chuyển đi biển Gwangali','Từ Haeundae Beach đi bộ, bắt bus 38 đến Gwangali (~25p) theo map','',''],
+['14h–17h','Tham quan Gwangali Beach','','',''],
+['','Cafe','Ngồi cafe, chụp ảnh','Cup & Cup 컵앤컵커피',''],
+['Tối','Đi ăn','','Haeundae Traditional Market 해운대 전통시장','']]},
+{t:'Day 3 · Busan – Seoul',d:'T7 · 7/11',it:[
+['7h','Dậy, ăn sáng, makeup','- Mua nước mang theo vì trời có thể nắng\n- Check-out khách sạn','',''],
+['8h','Di chuyển đi Busan Station','- Mua đồ ăn sáng ở cửa hàng tiện lợi\n- Có mặt ở ga trước 15p để tìm đúng line tàu & xuất vé','',''],
+['9h26–11h53','KTX → Seoul Station (~2 tiếng)','- Đặt vé trước tại website\n- Lên tàu tìm chỗ để vali ở đầu toa\n- Makeup luôn trên tàu','Có thể ăn trên tàu','Tàu chạy đúng giờ'],
+['12h–13h','Về khách sạn và check in','Ra cửa hàng tiện lợi tìm gì ăn rồi đi chơi luôn','',''],
+['14h–15h','Yongsan Park','','',''],
+['15h–16h','Itaewon','','',''],
+['17h–20h','Sông Hàn','- Ngắm hoàng hôn\n- Ngắm cầu phun nước ở Banpo Hangang Park','',''],
+['20h','Hongdae – dinner','','Ăn lươn nướng quán 弘揚燒鰻魚, ~1 triệu/người','Thịt nướng thường phải gọi mỗi người 1 phần']]},
+{t:'Day 4 · Seoul',d:'CN · 8/11',it:[
+['8h–11h','Yonsei – Ewha University','','','2 trường gần nhau, trường rộng, đi hơi mỏi chân, chủ yếu chụp ảnh'],
+['11h–14h','Seongsu','','Lunch + shopping',''],
+['14h–16h','Haebangchon','Di chuyển sang Haebangchon, đi dạo các con dốc, ngắm cảnh và nghỉ cafe.','Cafe / ăn nhẹ tại Haebangchon','Lịch khá sát nếu muốn đến Namsan lúc 16h; có thể rút ngắn điểm này'],
+['16h–19h30','Namsan Tower','Ngắm hoàng hôn, lên tháp vào buổi tối; book vé lên trên ngắm thành phố qua kính viễn vọng, xem phòng ánh sáng, thử trải nghiệm WC ở đây nhé 😂','Chiều đi cafe quán COMFORT, ngắm hoàng hôn xong thì lên tháp','Nên đi từ chiều đến tối (~4h). Khách sạn khu Hongdae gần Namsan nên đi Namsan trước; khu khác thì Myeongdong, Hongdae buổi tối đều ok'],
+['20h','Myeongdong','Chủ yếu shopping và ngắm người','Highly rcm: thịt nướng trên phố (có đôi vợ chồng biểu diễn thịt nướng múa lửa); ăn tối mì tương đen quán Hong Kong Banjeom 0410 ngay trong khu Myeongdong','']]},
+{t:'Day 5 · Seoul',d:'T2 · 9/11',it:[
+['6h30–8h','Khách sạn','Dậy, makeup, ăn sáng. Nhớ mang theo nước','',''],
+['8h–10h30','Bukchon Hanok Village 북촌 한옥마을','','','Đến trước 10h vì sau 10h sẽ siêu đông'],
+['10h30–12h','Seochon','Dạo ngõ nhỏ, chụp ảnh và ghé cafe nhẹ. Sau đó di chuyển đến Gyeongbokgung.','Cafe / ăn trưa tại Seochon',''],
+['12h–15h','Gyeongbokgung Palace','- Mời các trung điện tiến cung\n- Chụp ảnh 7749 kiểu với hanbok & mua đồ lưu niệm\n- Trả hanbok, thay quần áo, đi ăn trưa','',''],
+['15h–17h','Di chuyển về Ikseon-dong','Đi bus 709, sau đó chuyển sang bus 7025 theo map','',''],
+['18h–20h','Ăn tối ở Ikseon-dong','','CHƯA CÓ QUÁN – cần gợi ý',''],
+['20h–21h15','Ikseon-dong Hanok Village 익선동 한옥마을','- Đi dạo, mua đồ lưu niệm\n- Di chuyển đi Myeongdong street','',''],
+['22h–23h','Gwanghwamun Square 광화문광장 / Cheonggyecheon 청계천','Check-in, đi dạo đêm ở quảng trường Gwanghwamun & suối Cheonggyecheon','',''],
+['23h–0h','Về khách sạn','Nghỉ ngơi','','']]},
+{t:'Day 6 · Seoul',d:'T3 · 10/11',it:[
+['8h–11h','Seoul Grand Park Sky Lift','Di chuyển đến Gwacheon; trải nghiệm Sky Lift và đi dạo quanh công viên.','Ăn trưa quanh Seoul Grand Park / đồ ăn nhẹ','Kiểm tra lịch vận hành theo thời tiết trước ngày đi'],
+['11h–12h','Di chuyển về Gangnam ăn trưa','','',''],
+['13h–14h','Starfield / Coex Mall (Gangnam)','Có cái thư viện hot TikTok','',''],
+['14h–16h','Apgujeong','Khu vui chơi giải trí','',''],
+['16h–18h','Seoul Forest','Công viên, ngắm hoa anh đào / lá vàng chill chill','Mua đồ picnic, ăn brunch','Buổi trưa đông dân văn phòng, nên trưa nhấc mông sang Seongsu'],
+['20h','Về gần nhà','','','']]},
+{t:'Day 7 · Seoul – Hà Nội',d:'T4 · 11/11',it:[
+['6h–7h','Khách sạn','Dậy, check-out','',''],
+['7h–8h30','Di chuyển ra sân bay Incheon','Đi bus 6001 theo map (1h20p) – 인천국제공항 제1여객터미널 (Terminal 1)','',''],
+['8h30–10h','Check-in','Làm thủ tục, check-in, ăn sáng','',''],
+['11h05–14h10','Incheon → Hà Nội','','',''],
+['14h10–15h','Về nhà','','','']]}
+];
+const mk=a=>({t:a.t,d:a.d,it:a.it.map(r=>({id:Math.random().toString(36).slice(2,9),tm:r[0],ti:r[1],de:r[2],fd:r[3],nt:r[4],ok:0}))});
+const fresh=()=>DEF.map(mk);
+const HOT=[{n:'Busan – Hotel With',a:'29 Haeundaehaebyeon-ro 298beon-gil, Haeundae, Busan 48099',q:'부산 해운대구 해운대해변로298번길 29',s:'Gần bãi biển Haeundae, ga Haeundae (Line 2) cách khoảng 10–15p đi bộ.'},{n:'Seoul – khách sạn Yangpyeong-ro',a:'102-2 Yangpyeong-ro, Seoul 07206',q:'서울 영등포구 양평로 102-2',s:'Ga gần: Yangpyeong (Line 5), Dangsan (Line 2/9). Đi Hongdae/Sinchon bằng Line 2 chỉ vài ga.'}];
+const MVN='Gợi ý tham khảo từ khách sạn; mở Naver Map để xem số bus/giờ chính xác.';
+// title: [cách di chuyển, từ khoá tìm Naver Map]
+const MV={
+'Check in khách sạn':['Ga Busan → Line 1 đến Seomyeon → Line 2 đến Haeundae (~55–65p). Có vali nên taxi ~40p sẽ tiện hơn.','해운대해변로298번길 29'],
+'Đi tàu Sky Capsule':['Từ khách sạn đi taxi ~10p tới ga Mipo (Blueline Park), hoặc đi bộ ~20–25p dọc bãi biển.','블루라인파크 미포정거장'],
+'Xuống tàu, tham quan Cheongsapo':['Sky Capsule kết thúc ngay tại Cheongsapo (청사포 정거장).','청사포 정거장'],
+'Ăn tối quanh Haeundae':['Đi bộ ~10–15p từ khách sạn.','해운대시장'],
+'Đi Olive Young,…':['Đi bộ quanh khu Haeundae, gần khách sạn.','올리브영 해운대'],
+'Tham quan Huinnyeoul':['Xa nhất trong ngày: taxi ~40–50p (~30.000–35.000 won), hoặc Line 2 → Line 1 xuống Nampo/Jungang rồi bus sang Yeongdo (~1h15).','흰여울문화마을'],
+'Gamcheon Culture Village':['Từ Huinnyeoul taxi ~20–25p, hoặc bus theo Naver.','감천문화마을'],
+'Di chuyển đi biển Gwangali':['Bus 38 từ Haeundae (~25p) như trong lịch trình.','광안리해수욕장'],
+'Đi ăn':['Đi bộ ~10–15p từ khách sạn.','해운대시장'],
+'Di chuyển đi Busan Station':['Line 2 Haeundae → Seomyeon → Line 1 Busan (~55–60p), hoặc taxi ~40p có vali.','부산역'],
+'Về khách sạn và check in':['Seoul Station → khách sạn: tàu điện ~35–45p (1 lần đổi), hoặc taxi ~25–30p. Chọn tuyến “ít đổi nhất” trên Naver.','서울 영등포구 양평로 102-2'],
+'Yongsan Park':['Line 5 → Gongdeok → Line 6 đến Samgakji / Noksapyeong (~45p).','용산공원'],
+'Itaewon':['Line 5 → Gongdeok → Line 6 đến Itaewon (~45p).','이태원역'],
+'Sông Hàn':['Line 9 đến Express Bus Terminal rồi đi bộ/bus tới Banpo Hangang Park; hoặc taxi ~25p.','반포한강공원'],
+'Hongdae – dinner':['Line 2 Dangsan → Hongik Univ. (~3 ga, ~8p).','홍대입구역'],
+'Yonsei – Ewha University':['Line 2 Dangsan → ga Sinchon (Yonsei) rồi tiếp 1 ga tới Ewha Womans Univ. (~15p).','연세대학교'],
+'Seongsu':['Line 2 Dangsan → Seongsu, đi thẳng ~35–40p.','성수역'],
+'Haebangchon':['Line 5 → Gongdeok → Line 6 đến Noksapyeong, đi bộ lên Haebangchon.','해방촌'],
+'Namsan Tower':['Cáp treo Namsan: từ ga Myeongdong (Line 4) exit 3 đi bộ; hoặc bus 02 lên tháp.','N서울타워'],
+'Myeongdong':['Từ Namsan đi bộ xuống; về khách sạn Line 4 → đổi Line 2/5 tuỳ chỉ dẫn Naver.','명동'],
+'Bukchon Hanok Village 북촌 한옥마을':['Line 5 tới Jongno 3-ga → đổi Line 3 xuống Anguk exit 2 (~40p).','북촌한옥마을'],
+'Seochon':['Từ Bukchon đi bộ ~15–20p.','서촌'],
+'Gyeongbokgung Palace':['Line 5 Gwanghwamun hoặc Line 3 Gyeongbokgung exit 5.','경복궁'],
+'Di chuyển về Ikseon-dong':['Theo lịch trình: bus 709 → 7025. Hoặc Line 3 Gyeongbokgung → Anguk/Jongno 3-ga, đi bộ.','익선동 한옥마을'],
+'Ikseon-dong Hanok Village 익선동 한옥마을':['Line 5 từ khách sạn đi thẳng tới Jongno 3-ga exit 4/6 (~30p).','익선동 한옥마을'],
+'Gwanghwamun Square 광화문광장 / Cheonggyecheon 청계천':['Line 5 từ khách sạn tới Gwanghwamun, ~30–35p, đi thẳng không đổi.','광화문광장'],
+'Seoul Grand Park Sky Lift':['Line 2 Dangsan → Sadang → Line 4 xuống Seoul Grand Park (~60–70p).','서울대공원 스카이리프트'],
+'Di chuyển về Gangnam ăn trưa':['Line 4 → Sadang → Line 2 tới Gangnam (~35–40p).','강남역'],
+'Starfield / Coex Mall (Gangnam)':['Line 2 Samseong exit 5/6, hoặc Line 9 Bongeunsa exit 7.','스타필드 코엑스몰'],
+'Apgujeong':['Từ Coex taxi ~10–15p, hoặc Line 9 → Sinsa → Line 3 tới Apgujeong.','압구정로데오'],
+'Seoul Forest':['Từ Apgujeong Rodeo đi tuyến Suin-Bundang thẳng tới Seoul Forest (~15p).','서울숲'],
+'Về gần nhà':['Seoul Forest → Line 2 Ttukseom → Dangsan, hoặc theo Naver.','서울 영등포구 양평로 102-2'],
+'Di chuyển ra sân bay Incheon':['Bus 6001 như lịch trình (~1h20p). Phương án khác: Line 2 Dangsan → Hongik Univ. rồi AREX tới Incheon T1 (~50p).','인천국제공항 제1여객터미널']};
+let D,cur=0,ed=null,OP=new Set(),MO=null;
+try{D=JSON.parse(localStorage.getItem(KEY))}catch(e){D=null}
+if(!Array.isArray(D)||!D.length)D=fresh();
+D.forEach(d=>d.it.forEach(i=>{if(i.mv===undefined){const m=MV[i.ti]||['',''];i.mv=m[0];i.nq=m[1]}}));
+{const n=new Date();if(n.getFullYear()==2026&&n.getMonth()==10&&n.getDate()>=5&&n.getDate()<=11)cur=n.getDate()-5}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function render(){
+ $('tabs').innerHTML=D.map((x,i)=>`<button class="tab ${i==cur?'on':''}" data-d="${i}">${esc(x.t.split(' · ')[0])}<small>${esc(x.d)}</small></button>`).join('');
+ const day=D[cur];$('dt').textContent=day.t+' ('+day.d+')';
+ $('ht').innerHTML=(cur==2?[0,1]:[cur<2?0:1]).map(k=>{const h=HOT[k];return `<div class="hot"><b>🏨 ${esc(h.n)}</b>${esc(h.a)}<br>${esc(h.s)} <a target="_blank" rel="noopener" href="https://map.naver.com/p/search/${encodeURIComponent(h.q)}">🗺 Naver Map</a></div>`}).join('')+`<div class="sub">${MVN}</div>`;
+ const tot=D.reduce((a,x)=>a+x.it.length,0),dn=D.reduce((a,x)=>a+x.it.filter(i=>i.ok).length,0);
+ $('pg').style.width=(tot?dn/tot*100:0)+'%';$('pgt').textContent=`Đã xong ${dn}/${tot} hoạt động`;
+ $('list').innerHTML=day.it.map((it,i)=>it.id===ed?form(it):card2(it,i)).join('');
+}
+const card=(it,i)=>`<div class="it ${it.ok?'done':''}"><input type="checkbox" class="ck" data-a="ck" data-i="${i}" ${it.ok?'checked':''}>
+<div class="bd"><div class="tm">${esc(it.tm)}</div><div class="ti">${esc(it.ti)}</div>
+${it.de?`<div class="de">${esc(it.de)}</div>`:''}${it.fd?`<span class="tag fd">🍜 ${esc(it.fd)}</span>`:''}${it.nt?`<span class="tag nt">📝 ${esc(it.nt)}</span>`:''}${it.mv?`<span class="tag mv">🚇 ${esc(it.mv)}</span>`:''}${it.nq?`<a class="nv" target="_blank" rel="noopener" href="https://map.naver.com/p/search/${encodeURIComponent(it.nq)}">🗺 Mở Naver Map</a>`:''}</div>
+<div class="ac"><button data-a="ed" data-i="${i}">✎</button><button data-a="up" data-i="${i}">↑</button><button data-a="dn" data-i="${i}">↓</button><button data-a="rm" data-i="${i}">🗑</button></div></div>`;
+const card2=(it,i)=>{const o=OP.has(it.id),sm=[it.fd&&'🍜',it.nt&&'📝',it.mv&&'🚇'].filter(Boolean).join(' ');
+return `<div class="it ${it.ok?'done':''} ${o?'op':''}"><input type="checkbox" class="ck" data-a="ck" data-i="${i}" ${it.ok?'checked':''}>
+<div class="bd"><div class="hd" data-a="tg" data-i="${i}"><div class="tm">${esc(it.tm)||'&nbsp;'}</div><div class="ti"><span class="chev">${o?'▼':'▶'}</span>${esc(it.ti)} <span class="sub">${sm}</span></div></div>
+<div class="xp">${it.de?`<div class="de">${esc(it.de)}</div>`:''}${it.fd?`<span class="tag fd">🍜 ${esc(it.fd)}</span>`:''}${it.nt?`<span class="tag nt">📝 ${esc(it.nt)}</span>`:''}${it.mv?`<span class="tag mv">🚇 ${esc(it.mv)}</span>`:''}${it.nq?`<a class="nv" target="_blank" rel="noopener" href="https://map.naver.com/p/search/${encodeURIComponent(it.nq)}">🗺 Mở Naver Map</a>`:''}${!(it.de||it.fd||it.nt||it.mv||it.nq)?'<div class="sub">Chưa có chi tiết. Bấm ✎ để thêm.</div>':''}</div></div>
+<div class="ac"><button data-a="ed" data-i="${i}">✎</button><button data-a="mo" data-i="${i}">⋯</button>${MO===it.id?`<button data-a="up" data-i="${i}">↑</button><button data-a="dn" data-i="${i}">↓</button><button data-a="rm" data-i="${i}">🗑</button>`:''}</div></div>`};
+const form=it=>`<div class="it"><div class="bd"><label>Thời gian</label><input type="text" id="f-tm" value="${esc(it.tm)}">
+<label>Nội dung</label><input type="text" id="f-ti" value="${esc(it.ti)}">
+<label>Chi tiết hoạt động</label><textarea id="f-de">${esc(it.de)}</textarea>
+<label>Ăn uống</label><textarea id="f-fd">${esc(it.fd)}</textarea>
+<label>Note</label><textarea id="f-nt">${esc(it.nt)}</textarea>
+<label>Cách di chuyển</label><textarea id="f-mv">${esc(it.mv)}</textarea>
+<button class="pr" data-a="sv">Lưu</button> <button data-a="cn">Huỷ</button></div></div>`;
+document.addEventListener('click',e=>{
+ const b=e.target.closest('button,input.ck,.hd');if(!b)return;
+ if(b.dataset.d!==undefined){cur=+b.dataset.d;ed=null;return render()}
+ const a=b.dataset.a,i=+b.dataset.i,L=D[cur].it;
+ if(a=='ck'){L[i].ok=b.checked?1:0}
+ else if(a=='ed'){ed=L[i].id}
+ else if(a=='up'&&i>0){[L[i-1],L[i]]=[L[i],L[i-1]]}
+ else if(a=='dn'&&i<L.length-1){[L[i+1],L[i]]=[L[i],L[i+1]]}
+ else if(a=='rm'){if(confirm('Xoá hoạt động này?'))L.splice(i,1)}
+ else if(a=='cn'){ed=null}
+ else if(a=='tg'){const id=L[i].id;OP.has(id)?OP.delete(id):OP.add(id)}
+ else if(a=='mo'){MO=MO===L[i].id?null:L[i].id}
+ else if(a=='sv'){const it=L.find(x=>x.id===ed);if(it){it.tm=$('f-tm').value;it.ti=$('f-ti').value;it.de=$('f-de').value;it.fd=$('f-fd').value;it.nt=$('f-nt').value;it.mv=$('f-mv').value}ed=null}
+ else return;
+ save();render();
+});
+$('add').onclick=()=>{const it={id:Math.random().toString(36).slice(2,9),tm:'',ti:'Hoạt động mới',de:'',fd:'',nt:'',ok:0};D[cur].it.push(it);ed=it.id;save();render()};
+$('de').onclick=()=>{const t=prompt('Tên ngày:',D[cur].t);if(t===null)return;const d=prompt('Thứ / ngày:',D[cur].d);D[cur].t=t||D[cur].t;if(d)D[cur].d=d;save();render()};
+$('rs').onclick=()=>{if(confirm('Khôi phục lịch trình gốc? Mọi chỉnh sửa sẽ mất.')){D=fresh();cur=0;ed=null;save();render()}};
+$('pt').onclick=()=>window.print();
+$('ea').onclick=()=>{D[cur].it.forEach(x=>OP.add(x.id));render()};
+$('ca').onclick=()=>{D[cur].it.forEach(x=>OP.delete(x.id));render()};
+$('pv').onclick=()=>{cur=Math.max(0,cur-1);ed=null;MO=null;render();scrollTo(0,0)};
+$('nx').onclick=()=>{cur=Math.min(D.length-1,cur+1);ed=null;MO=null;render();scrollTo(0,0)};
+$('ex').onclick=()=>{const t=JSON.stringify(D,null,1);const el=document.createElement('textarea');el.value=t;document.body.appendChild(el);el.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}el.remove();alert(ok?'Đã sao chép JSON vào clipboard. Dán vào file .json để sao lưu.':'Không sao chép được tự động.')};
+$('im').onclick=()=>{const t=prompt('Dán nội dung JSON đã xuất:');if(!t)return;try{const x=JSON.parse(t);if(!Array.isArray(x)||!x.length)throw 0;D=x;cur=0;ed=null;save();render()}catch(e){alert('JSON không hợp lệ.')}};
+render();
+</script>
+</body>
+</html>
