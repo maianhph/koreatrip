@@ -301,6 +301,16 @@
     "nq": "서울 영등포구 양평로 102-2"
    },
    {
+    "id": "06ujme9",
+    "tm": "14-15h",
+    "ti": "Đi chợ Mangwon đớp quà chiều",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": ""
+   },
+   {
     "id": "yc4pawh",
     "tm": "14h–15h",
     "ti": "Yongsan Park",
@@ -321,16 +331,6 @@
     "ok": 0,
     "mv": "Line 5 → Gongdeok → Line 6 đến Itaewon (~45p).",
     "nq": "이태원역"
-   },
-   {
-    "id": "06ujme9",
-    "tm": "14-15h",
-    "ti": "Đi chợ Mangwon đớp quà chiều",
-    "de": "",
-    "fd": "",
-    "nt": "",
-    "ok": 0,
-    "mv": ""
    },
    {
     "id": "ov3a1za",
