@@ -455,6 +455,16 @@
     "nq": "경복궁"
    },
    {
+    "id": "x4esqce",
+    "tm": "8h-8h30",
+    "ti": "Ăn sáng ở CHTL",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": ""
+   },
+   {
     "id": "yjkukpl",
     "tm": "15h–16h",
     "ti": "Changdeokgung Palace",
@@ -464,16 +474,6 @@
     "ok": 0,
     "mv": "",
     "nq": "익선동 한옥마을"
-   },
-   {
-    "id": "x4esqce",
-    "tm": "8h-8h30",
-    "ti": "Ăn sáng ở CHTL",
-    "de": "",
-    "fd": "",
-    "nt": "",
-    "ok": 0,
-    "mv": ""
    },
    {
     "id": "23m8crd",
