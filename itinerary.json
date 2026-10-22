@@ -467,17 +467,6 @@
     "nq": "익선동 한옥마을"
    },
    {
-    "id": "0v6ljev",
-    "tm": "18h–20h",
-    "ti": "Ăn tối ở Ikseon-dong",
-    "de": "",
-    "fd": "CHƯA CÓ QUÁN – cần gợi ý",
-    "nt": "",
-    "ok": 0,
-    "mv": "",
-    "nq": ""
-   },
-   {
     "id": "23m8crd",
     "tm": "20h–21h15",
     "ti": "Ikseon-dong Hanok Village 익선동 한옥마을",
@@ -487,6 +476,17 @@
     "ok": 0,
     "mv": "Line 5 từ khách sạn đi thẳng tới Jongno 3-ga exit 4/6 (~30p).",
     "nq": "익선동 한옥마을"
+   },
+   {
+    "id": "0v6ljev",
+    "tm": "18h–20h",
+    "ti": "Ăn tối ở Ikseon-dong",
+    "de": "",
+    "fd": "CHƯA CÓ QUÁN – cần gợi ý",
+    "nt": "",
+    "ok": 0,
+    "mv": "",
+    "nq": ""
    },
    {
     "id": "8tk8kxs",
