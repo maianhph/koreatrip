@@ -361,6 +361,16 @@
     "nq": "연세대학교"
    },
    {
+    "id": "3k472yn",
+    "tm": "11h-14h",
+    "ti": "Hannam- dong",
+    "de": "Khu vui chơi giới trẻ",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": ""
+   },
+   {
     "id": "bibist7",
     "tm": "14h–16h",
     "ti": "Haebangchon",
@@ -370,16 +380,6 @@
     "ok": 0,
     "mv": "Line 5 → Gongdeok → Line 6 đến Noksapyeong, đi bộ lên Haebangchon.",
     "nq": "해방촌"
-   },
-   {
-    "id": "3k472yn",
-    "tm": "11h-14h",
-    "ti": "Hannam- dong",
-    "de": "Khu vui chơi giới trẻ",
-    "fd": "",
-    "nt": "",
-    "ok": 0,
-    "mv": ""
    },
    {
     "id": "a9uvd0n",
