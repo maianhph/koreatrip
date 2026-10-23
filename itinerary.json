@@ -509,6 +509,16 @@
     "nq": "광화문광장"
    },
    {
+    "id": "nagueqr",
+    "tm": "19-21h",
+    "ti": "Đi Hyundai City Outlet Dongdaemun",
+    "de": "",
+    "fd": "",
+    "nt": "",
+    "ok": 0,
+    "mv": ""
+   },
+   {
     "id": "ktypp71",
     "tm": "22h–0h",
     "ti": "Về khách sạn hoặc đi lượn qua Itaewon ",
@@ -518,16 +528,6 @@
     "ok": 0,
     "mv": "",
     "nq": ""
-   },
-   {
-    "id": "nagueqr",
-    "tm": "19-21h",
-    "ti": "Đi Hyundai City Outlet Dongdaemun",
-    "de": "",
-    "fd": "",
-    "nt": "",
-    "ok": 0,
-    "mv": ""
    }
   ]
  },
